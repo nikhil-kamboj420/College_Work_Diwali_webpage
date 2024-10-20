@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 62.5%;
+}
+
+#main-container {
+  width: 100%;
+  height: 100vh;
+}
+
+.bg-wrapper {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  animation: imgchange 10s ease-in-out 0.5ms infinite;
+}
+
+@keyframes imgchange {
+  0% {
+    background-image: url("./images/1.jpeg");
+  }
+  25% {
+    background-image: url("./images/2.jpeg");
+  }
+  50% {
+    background-image: url("./images/3.jpeg");
+  }
+  75% {
+    background-image: url("./images/4.jpeg");
+  }
+  100% {
+    background-image: url("./images/5.jpeg");
+  }
+}
+
+.bg-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.greet{
+  text-align: center;
+}
+.greet span{
+  font-size: 2rem;
+  color: #fff;
+}
+
+.leFlyInTop span { 
+  animation: leFlyInTop 3s ease-out .5ms 1 ; 
+}
+@keyframes leFlyInTop {
+    0% {
+        transform: translate(0px, -80px);
+        opacity: 0
+    }
+    50% {
+        transform: translate(10px, 50px);
+        animation-timing-function: ease-in-out
+    }
+}
+
+/* .moveToBottom {
+  animation: moveToBottom .7s ease-in-out 5ms 1 ;
+} */
+/* @keyframes moveToBottom {
+  to {
+    transform: translateY(22rem);
+  }
+} */
+
