@@ -19,24 +19,25 @@ body {
   height: 100vh;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  animation: imgchange 10s ease-in-out 0.5ms infinite;
+  animation: imgchange 10s ease-in-out infinite;
+  background-image: url("./images/1.jpeg"), url("./images/2.jpeg"), url("./images/3.jpeg"), url("./images/4.jpeg"), url("./images/5.jpeg");
 }
 
 @keyframes imgchange {
-  0% {
-    background-image: url("./images/1.jpeg");
+  0%, 20% {
+    background-image: url("./images/1.jpeg"), url("./images/2.jpeg"), url("./images/3.jpeg"), url("./images/4.jpeg"), url("./images/5.jpeg");
   }
-  25% {
-    background-image: url("./images/2.jpeg");
+  20%, 40% {
+    background-image: url("./images/2.jpeg"), url("./images/3.jpeg"), url("./images/4.jpeg"), url("./images/5.jpeg"), url("./images/1.jpeg");
   }
-  50% {
-    background-image: url("./images/3.jpeg");
+  40%, 60% {
+    background-image: url("./images/3.jpeg"), url("./images/4.jpeg"), url("./images/5.jpeg"), url("./images/1.jpeg"), url("./images/2.jpeg");
   }
-  75% {
-    background-image: url("./images/4.jpeg");
+  60%, 80% {
+    background-image: url("./images/4.jpeg"), url("./images/5.jpeg"), url("./images/1.jpeg"), url("./images/2.jpeg"), url("./images/3.jpeg");
   }
-  100% {
-    background-image: url("./images/5.jpeg");
+  80%, 100% {
+    background-image: url("./images/5.jpeg"), url("./images/1.jpeg"), url("./images/2.jpeg"), url("./images/3.jpeg"), url("./images/4.jpeg");
   }
 }
 
